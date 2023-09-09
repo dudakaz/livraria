@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Livros</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="assets/estilos.css">
 </head>
 
 <body>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="input-container">
-                <label for="autor">Autor</label>
+                <label for="Autor">Autor</label>
                 <input type="text" name="autor" id="autor" placeholder="Nome do autor" required>
             </div>
             <div class="input-container">
@@ -53,12 +53,13 @@
                     <label for="ingles">Inglês</label>
                 </div>
                 <div class="input-check">
-                     <input type="checkbox" name="idioma" value="Espanhol" id="espanhol">
-                     <label for="espanhol">Espanhol</label>
+                    <input type="checkbox" name="idioma" value="Espanhol" id="espanhol">
+                    <label for="espanhol">Espanhol</label>
                 </div>
                 <div class="input-container">
                     <label for="isbn">ISBN</label>
-                     <input type="text" name="isbn" id="isbn" placeholder="ISBN do livro" pattern="\d{3}-\d{10}" required>
+                    <input type="text" name="isbn" id="isbn" placeholder="ISBN do livro" pattern="\d{3}-\d{10}"
+                        required>
                 </div>
                 <div class="input-container">
                     <label for="ano">Ano</label>
@@ -70,43 +71,48 @@
                 </div>
                 <div class="input-container">
                     <label for="categoria">Categorias</label>
-                     <select name="categoria" id="Categoria" required>
+                    <select name="categoria" id="Categoria" required>
                         <option value="">Selecione</option>
                         <option value="Ação">Ação</option>
                         <option value="Aventura">Aventura </option>
                         <option value="Comédia">Comédia</option>
                         <option value="Drama">Drama</option>
-                        <option value="Ficção Científica"></option>
-                        <option value="Romance"> Romance</option>
-                        <option value="Suspense">Suspense</option>
-                        <option value="Terror">Terror</option>
-                    </select>
-                </div>
-                <div class="input-container">
-                    <label>Estado de livro</label>
-                     <div class="radio-group">
-                        <input type="radio" name="situacao" id="novo" value="Novo" required checked>
-                        <label for="novo">Novo</label>
+                        <option value="Ficção Científica">Ficção Científica </option>
+        </fieldset>
+        <option value="Romance"> Romance</option>
+        <option value="Suspense">Suspense</option>
+        <option value="Terror">Terror</option>
+        </select>
+        </div>
+        <div class="input-container">
+            <label>Estado de livro</label>
+            <div class="radio-group">
+                <input type="radio" name="situacao" id="novo" value="Novo" required checked>
+                <label for="novo">Novo</label>
 
-                        <input type="radio" name="situacao" id="usado" value="usado" required checked>
-                        <label for="usado">Usado</label>
-                     </div>
-                </div>
-                <div class="input-container">
-                    <label for="resumo"> Resumo</label>
-                    <textarea name="resumo" id="resumo" placeholder="Resumo do Livro" rows="5"></textarea>
-                </div>
-                <div class="input-container">
-                    <label for="capa">Capa</label>
-                    <input type="file" name="capa" id="capa" accept="image/*">
-                </div>
-                <div class="actions">
-                    <button type="submit">Cadastrar</button>
-                     <button type="reset">Limpar</button>
-                </div>
+                <input type="radio" name="situacao" id="usado" value="usado" required checked>
+                <label for="usado">Usado</label>
             </div>
+        </div>
+        <div class="input-container">
+            <label for="resumo"> Resumo</label>
+            <textarea name="resumo" id="resumo" placeholder="Resumo do Livro" rows="5"></textarea>
+        </div>
+        <div class="input-container">
+            <label for="capa">Capa</label>
+            <input type="file" name="capa" id="capa" accept="image/*">
+        </div>
+        <div class="actions">
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </div>
+        </div>
         </fieldset>
     </form>
+    <footer>
+        <p>&copy; 2023 Livraria Fantástica | Criado por Eduarda</p>
+    </footer>
+
 </body>
 
 </html>
